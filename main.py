@@ -1,11 +1,13 @@
-def creer_fichier_bat(app):
-    contenu_bat = f'Set __COMPAT_LAYER=RunAsInvoker\nStart {app}'
+def create_bat(app):
+    content_bat = f'Set __COMPAT_LAYER=RunAsInvoker\nStart {app}'
 
-    with open('programme.bat', 'w') as fichier:
-        fichier.write(contenu_bat)
+    with open('RunAsAdmin.bat', 'w') as fichier:
+        fichier.write(content_bat)
 
 
 if __name__ == "__main__":
-    mot_a_inserer = input("Entrez le nom du EXE ou MSI (avec l'extension) : ")
-    creer_fichier_bat(mot_a_inserer)
-    print("Le fichier bat a été créé avec succès.")
+    print("This program will launch an .exe file as admin")
+    print("See instructions (readme.md) for more details")
+    print("Exeample : SteamSetup.exe")
+    fileName = input("File name (with extension) : ")
+    create_bat(fileName)
