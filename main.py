@@ -1,3 +1,7 @@
+import subprocess
+
+subprocess.run(['runas', '/user:Administrator', 'votrescript.exe'])
+
 def create_bat(app):
     content_bat = f'Set __COMPAT_LAYER=RunAsInvoker\nStart {app}'
 

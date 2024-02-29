@@ -8,6 +8,7 @@ Instructions :
 Example of input : SteamSetup.exe
 
 I didn't try this software on .msi files si if it doesnt works, please report it in the issues in github and attach your msi
+I am working on apps that require admin rights multiple times
 
 Credits : for the exe : pyinstaller
-for the code : ChatGPT
+For the code : ChatGPT
