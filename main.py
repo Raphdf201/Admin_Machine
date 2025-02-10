@@ -1,5 +1,6 @@
 def create_bat(app):
-    content_bat = f'Set __COMPAT_LAYER=RunAsInvoker\nStart {app}'
+    content_bat = f'set __COMPAT_LAYER=RunAsInvoker \nstart {app}'
+
 
     with open('RunAsAdmin.bat', 'w') as fichier:
         fichier.write(content_bat)
